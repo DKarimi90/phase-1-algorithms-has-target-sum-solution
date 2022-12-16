@@ -1,20 +1,20 @@
 function hasTargetSum(array, target) {
-  const seenNumbers = new Set(); // initialize an empty Set
-  for (const number of array) {
-    const complement = target - number;
+  const newArray = new Set(); // initialize an empty Set
+  for (const Array of array) {
+    const complement = target - Array;
 
     // .has returns true if the Set includes the complement
-    if (seenNumbers.has(complement)) return true;
+    if (newArray.has(complement)) return true;
 
     // .add adds the number to the Set
-    seenNumbers.add(number);
+    newArray.add(Array);
   }
   return false;
 }
 /* 
   Write the Big O time complexity of your function here
-  Time complexity: O👎
-Space complexity: O👎
+  Time complexity: O(n)
+Space complexity: O(n)
 
 */
 
